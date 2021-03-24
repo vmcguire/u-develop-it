@@ -19,11 +19,11 @@ const db = new sqlite3.Database("./db/election.db", (err) => {
   console.log("Connected to the election database.");
 });
 
-app.get("/", (req, res) => {
-  res.json({
-    message: "Hello World",
-  });
-});
+// app.get("/", (req, res) => {
+//   res.json({
+//     message: "Hello World",
+//   });
+// });
 
 // Get all candidates
 app.get("/api/candidates", (req, res) => {
